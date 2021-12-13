@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <style>
+    .image{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .view{
+      position:absolute;
+      visibility: hidden;
+    }
+    .image:hover .view{
+      visibility: visible;
+    }
+    .image:hover .card-image-bg{
+      background-color:#00fff74d;
+    }
+    .card-title:hover{
+      color:#00FFF8 !important;
+    }
+    .avatar-name:hover{
+      color:#00FFF8 !important;
+    }
+  </style>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body style="background-color: hsl(217, 54%, 11%);height:100vh;display: flex; justify-content: center;align-items: center;">
+        <div class="card" style="width:18rem;background-color:hsl(216, 50%, 16%);border-radius:10px;">
+          <div class="image">
+            <div class="card-image-bg" style="width:255px;height:255px;position:absolute;border-radius:5px;cursor:pointer;"></div>
+            <img src="images/image-equilibrium.jpg" class="card-img-top p-3" style="border-radius:20px;cursor: pointer;" alt="Image-equilibirum" />
+            <img src="images/icon-view.svg" class="view" style="cursor:pointer" alt="View"/>
+          </div>
+          <div class="card-body">
+            <div class="card-title" style="color:hsl(0, 0%, 100%);font-size:18px;cursor:pointer;">Equilibirium #3429</div>
+            <div class="card-text text-align-justify" style="color:hsl(215, 32%, 27%);">Our Equilibirium collects promotes balance and calm</div>
+            <div class="d-flex flex-row justify-content-between align-items-end mt-3">
+              <div class="d-flex flex-row justify-content-center align-items-center"><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8" />
+              </svg><div style="color:#00FFF8;padding-left:5px;">0.041ETH</div></div>
+              <div class="time d-flex flex-row justify-content-center align-items-center" style="color:hsl(215, 32%, 27%);"><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                  fill="#8BACD9" />
+              </svg><div style="padding-left:5px;">3 days left</div></div>
+            </div>
+            <div class="mt-3 mb-3" style="height:2px;background-color:hsl(215, 32%, 27%);"></div>
+            <div class="d-flex flex-row justify-content-start align-items-center">
+              <img src="images/image-avatar.png" class="border border-2 border-white rounded-circle"  style="width:40px;height:40px;" alt="Avatar"/>
+              <div style="color:hsl(215, 32%, 27%);margin-left:10px;">Creation of</div><div style="margin-left:10px;color:white;cursor:pointer;" class="avatar-name">Jules Wyvern</div>
+            </div>
+          </div>
+        </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
